@@ -28,7 +28,7 @@ before 'deploy:setup', 'rvm:install_rvm', 'rvm:install_ruby' # интеграц�
 
 after 'deploy:update_code', :roles => :app do
   #run "cd #{release_path}; RAILS_ENV=production rake db:migrate"
-  run "cd #{release_path}; RAILS_ENV=production rake assets:precompile"
+  #run "cd #{release_path}; RAILS_ENV=production rake assets:precompile"
   #run "cd #{release_path}; rails generate ckeditor:install --orm=active_record --backend=paperclip"
   #run "ln -s #{shared_path}/public/ckeditor_assets #{release_path}/public/ckeditor_assets"
   # Здесь для примера вставлен только один конфиг с приватными данными - database.yml. Обычно для таких вещей создают папку /srv/myapp/shared/config и кладут файлы туда. При каждом деплое создаются ссылки на них в нужные места приложения.
