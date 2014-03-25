@@ -1,9 +1,11 @@
 Termosipmain::Application.routes.draw do
   
+  resources :articles
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
   root  'static_pages#home'
+  match '/content',  to: 'articles#new',            via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'

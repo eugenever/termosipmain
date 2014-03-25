@@ -1,0 +1,22 @@
+<% provide(:title, "Редактирование статьи") %>
+<h2>Редактирование статьи</h2>
+
+<div class="row">
+  <div class="span12">
+    <%= form_for(@article) do |f| %>
+      
+      <%= render 'error_article' %>
+
+      <%= f.label "Заголовок статьи" %>
+      <%= f.text_field :title %>
+
+      <%= f.label "Описание статьи" %>
+      <%= f.text_area :description %>
+
+      <%= f.label "Содержание статьи" %>
+      <%= f.text_area :content %>
+
+      <%= f.submit "Сохранить изменения", class: "btn btn-primary" %>
+    <% end %>    
+  </div>
+</div>

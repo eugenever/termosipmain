@@ -1,0 +1,10 @@
+<% provide(:title, 'Список статей') %>
+<h1>Список статей</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <%= render @articles %>
+</ul>
+
+<%= will_paginate %>

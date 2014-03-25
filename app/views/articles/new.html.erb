@@ -1,0 +1,23 @@
+<% provide(:title, 'Добавление статьи') %>
+<h1>Добавление статьи</h1>
+<p>Заполните приведенные ниже поля</p>
+
+<div class="row">
+  <div class="span12">
+    <%= form_for(@article) do |f| %>
+
+      <%= render 'error_article' %>
+
+      <%= f.label "Заголовок статьи" %>
+      <%= f.text_field :title %>
+
+      <%= f.label "Описание статьи" %>
+      <%= f.text_area :description %>
+
+      <%= f.label "Содержание статьи" %>
+      <%= f.text_area :content %>
+
+      <%= f.submit "Создать статью", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

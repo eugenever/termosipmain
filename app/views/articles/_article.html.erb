@@ -1,0 +1,15 @@
+<li>
+  <p>
+    <%= link_to article.title, article %>    
+  </p>
+  <p>
+    <%= article.description %>    
+  </p>
+  <p>
+    <% if current_user #current_user.admin? %>
+      <%= link_to "Редактировать", edit_article_path(article) %>
+      | <%= link_to "Удалить", article, method: :delete, data: { confirm: "Вы уверены что хотите удалить статью?" } %>
+    <% end %>
+  </p>
+
+</li>
