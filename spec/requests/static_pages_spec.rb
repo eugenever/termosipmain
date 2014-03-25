@@ -2,28 +2,30 @@ require 'spec_helper'
 
 describe "Static Pages" do
   
+  subject { page }
+
   describe "Home page" do
-    it "should have the content 'Термопанели, пеноизол, пенополиуретан'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Термопанели')
-      expect(page).to have_content('Пеноизол')
-      expect(page).to have_content('Пенополиуретан')
-    end
-    it "should have the title 'ТермоСИП | Утепление фасадов, термопанели, пеноизол, пенополиуретан'" do
-      visit '/static_pages/home'
-      expect(page).to have_title('Утепление фасадов, термопанели, пеноизол, пенополиуретан')
-    end
+    before { visit root_path }
+
+    it { should have_content('Термопанели') }
+    it { should have_content('Пеноизол') }
+    it { should have_content('Пенополиуретан') }
+    it { should have_title(full_title('Утепление фасадов, термопанели, пеноизол, пенополиуретан')) }
+    it { should_not have_title('| Главная') }
   end
 
   describe "About page" do
-    it "should have the content 'О нас'" do
-      visit '/static_pages/about'
-      expect(page).to have_content('О нас')
-    end
-    it "should have the title 'ТермоСИП | О нас'" do
-      visit '/static_pages/about'
-      expect(page).to have_title('ТермоСИП | О нас')
-    end
+    before { visit about_path }
+    
+    it { should have_content('О нас') }
+    it { should have_title('ТермоСИП | О нас') }    
+  end
+
+  describe "Contact page" do
+    before { visit contact_path }
+
+    it { should have_content('Контакты') }
+    it { should have_title('ТермоСИП | Контакты') }
   end
 
 end
