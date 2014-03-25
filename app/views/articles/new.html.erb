@@ -12,10 +12,10 @@
       <%= f.text_field :title %>
 
       <%= f.label "Описание статьи" %>
-      <%= f.text_area :description, size: "60x30" %>
+      <%= f.cktext_area :description, size: "60x30" %>
 
       <%= f.label "Содержание статьи" %>
-      <%= f.text_area :content %>
+      <%= f.cktext_area :content %>
 
       <%= f.submit "Создать статью", class: "btn btn-primary" %>
     <% end %>
