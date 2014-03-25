@@ -3,7 +3,7 @@
     <%= link_to article.title, article %>    
   </p>
   <p>
-    <%= article.description %>    
+    <%= raw article.description %>    
   </p>
   <p>
     <% if current_user #current_user.admin? %>
