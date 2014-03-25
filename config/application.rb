@@ -34,6 +34,7 @@ module Termosipmain
     config.assets.enabled = true
     config.assets.precompile += Ckeditor.assets
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+    config.assets.precompile += ['*ckeditor/skins/moono/icons.png']
     #config.assets.precompile += %w(ckeditor/*)
     
   end
