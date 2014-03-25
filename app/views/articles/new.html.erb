@@ -1,6 +1,6 @@
 <% provide(:title, 'Добавление статьи') %>
 <h1>Добавление статьи</h1>
-<p>Заполните приведенные ниже поля</p>
+<p>Заполните приведенные ниже поля!</p>
 
 <div class="row">
   <div class="span12">
@@ -8,14 +8,14 @@
 
       <%= render 'error_article' %>
 
-      <%= f.label "Заголовок статьи" %>
+      <%= f.label :title %>
       <%= f.text_field :title %>
 
-      <%= f.label "Описание статьи" %>
-      <%= f.cktext_area :description, size: "60x30" %>
+      <%= f.label :description %>
+      <%= f.text_area :description, size: "60x30" %>
 
-      <%= f.label "Содержание статьи" %>
-      <%= f.cktext_area :content %>
+      <%= f.label :content %>
+      <%= f.text_area :content %>
 
       <%= f.submit "Создать статью", class: "btn btn-primary" %>
     <% end %>
