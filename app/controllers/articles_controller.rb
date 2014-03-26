@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  before_action :signed_in_user_admin, only: [:new, :edit, :update, :destroy]
+
   def index
     @articles = Article.paginate(page: params[:page])
   end
@@ -46,6 +48,14 @@ class ArticlesController < ApplicationController
 
     def article_params
       params.require(:article).permit(:title, :description, :content)
+    end
+
+    # Before filters
+    def signed_in_user_admin
+      unless current_user.admin?
+        sign_out
+        redirect_to signin_url, notice: "Необходимы права администратора!"
+      end
     end
 
 end

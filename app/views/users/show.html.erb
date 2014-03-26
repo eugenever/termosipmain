@@ -4,8 +4,14 @@
     <section>
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%= @user.name %>        
       </h1>
     </section>
+  </aside>
+  <aside class="span8">
+    <% if current_user.admin? %>
+      <p><%= link_to "Создать новую статью", content_path %></p>
+      <p><%= link_to "Список всех статей", articles_path %></p>
+    <% end %>
   </aside>
 </div>
