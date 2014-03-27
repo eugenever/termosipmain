@@ -1,9 +1,7 @@
 <% provide(:title, @article.title) %>
-<div class="row">
-  <aside class="span12">
-    <h1>
-      <%= raw @article.title %>
-    </h1>
-    <p><%= raw @article.content %></p>
-  </aside>
+<div class="well">
+  <h1>
+    <%= raw @article.title %>
+  </h1>
+  <p><%= raw @article.content %></p>
 </div>

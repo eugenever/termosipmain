@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ТермоСИП - <%= yield(:title) %></title>
+    <title>ТермоСип - <%= yield(:title) %></title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
@@ -9,8 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= render 'layouts/shim' %>    
   </head>
-  <body>
+  <body style="<%= 'padding-top: 41px;' if current_page?(root_path) %>">
     <%= render 'layouts/header' %>
+    <% if current_page?(root_path) %>
+      <%= render 'layouts/mainheader' %>
+    <% end %>
     <div class="container container-fluid">
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
@@ -20,13 +23,13 @@
       <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
-  <script type="text/javascript">$(document).ready(function() {
-    if ($('textarea').length > 0) {
-        var data = $('textarea');
-        $.each(data, function(i) {
-            CKEDITOR.replace(data[i].id);
-        });
-    }
-  });
-  </script>
+    <script type="text/javascript">$(document).ready(function() {
+      if ($('textarea').length > 0) {
+          var data = $('textarea');
+          $.each(data, function(i) {
+              CKEDITOR.replace(data[i].id);
+          });
+      }
+    });
+    </script>
 </html>
