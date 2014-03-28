@@ -8,5 +8,11 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def fotomaterial    
+  end
+
+  def videomaterial    
+  end
   
 end

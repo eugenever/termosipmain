@@ -7,9 +7,13 @@ Termosipmain::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
 
   root  'static_pages#home'
-  match '/content',  to: 'articles#new',            via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/fotomaterial', to: 'static_pages#fotomaterial', via: 'get'
+  match '/videomaterial', to: 'static_pages#videomaterial', via: 'get'
+  
+  match '/content',  to: 'articles#new',        via: 'get'
+
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
