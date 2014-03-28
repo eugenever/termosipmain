@@ -19,18 +19,19 @@
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
       <%= yield %>
-       <%= link_to '<span class="glyphicon-class glyphicon glyphicon-chevron-up"></span> Наверх'.html_safe, '#Top' %>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
-    </div>
+    </div>    
+    <a href='#' id='w2b-StoTop' style='display:none;'>Наверх</a>
   </body>
-    <script type="text/javascript">$(document).ready(function() {
-      if ($('textarea').length > 0) {
-          var data = $('textarea');
-          $.each(data, function(i) {
-              CKEDITOR.replace(data[i].id);
-          });
-      }
-    });
+    <script type="text/javascript">
+      $(document).ready(function() {
+        if ($('textarea').length > 0) {
+            var data = $('textarea');
+            $.each(data, function(i) {
+                CKEDITOR.replace(data[i].id);
+            });
+        }
+      });
     </script>
 </html>
