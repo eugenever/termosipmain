@@ -1,0 +1,184 @@
+<% provide(:title, 'Клинкерная плитка') %>
+<div class="row">
+  <%= render 'shared/panel' %>
+  <div class="span9">
+    <div class="well">
+      
+      <p align="justify">Предлагаем Вам ознакомиться с вариантами цветовой гаммы клинкерных плиток используемых нами при изготовлении термопанелей. Здесь представлена номенклатура плиток польских торговых марок <b>Cerrad</b> и <b>Paradyz</b>.</p>
+      
+      <% if Rails.env.development? %>
+
+        <div class="alert alert-block alert-success">
+          <strong>Клинкерная плитка производства Cerrad</strong>
+          <p>В настоящий момент доступны 15 цветовых оттенков плитки Cerrad. Размеры плитки 245x65x6,5 мм.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Аляска</th>
+                <th>Бургонский плюс</th>
+                <th>Бургонский плюс рустика</th>
+                <th>Кантри бежевая плюс рустика</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("cerrad/alyaska 1069.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/alyaska 1069.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/burgonskiy plus 2554.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/burgonskiy plus 2554.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/burgonskiy plus rustika 2585.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/burgonskiy plus rustika 2585.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/cantry bezhevaya plus rustika 2646.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/cantry bezhevaya plus rustika 2646.jpg' %></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Кантри вишня плюс</th>
+                <th>Кантри вишня плюс рустика</th>
+                <th>Колорадо</th>
+                <th>Дакота</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("cerrad/cantry vishnya plus 2684.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/cantry vishnya plus 2684.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/cantry vishnya plus rustika 2677.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/cantry vishnya plus rustika 2677.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/colorado 1618.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/colorado 1618.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/dakota 1823.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/dakota 1823.jpg' %></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Гоби рустика</th>
+                <th>Индиана</th>
+                <th>Коричневая глазурованная</th>
+                <th>Красная</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("cerrad/gobi rustika 6125.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/gobi rustika 6125.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/indiana 1656.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/indiana 1656.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/korichnevaya glazurovannaya 2462.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/korichnevaya glazurovannaya 2462.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/krasnaya 1526.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/krasnaya 1526.jpg' %></td>
+              </tr>
+            </tbody>
+          </table> 
+
+          <table>
+            <thead>
+              <tr>
+                <th>Медовая глазурованная</th>
+                <th>Монтана</th>
+                <th>Песочная рустика</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("cerrad/medovaya glazurovannaya 1519.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/medovaya glazurovannaya 1519.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/montana 1625.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/montana 1625.jpg' %></td>
+                <td><%= link_to image_tag("cerrad/pesochnaya rustika 6040.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Cerrad", class: "img-polaroid", style: "padding: 1px;"), '/assets/cerrad/pesochnaya rustika 6040.jpg' %></td>
+                <td><%= image_tag("", size: "250x250", style: "padding: 0px;") %></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <p> </p>
+
+        <div class="alert alert-block alert-info">
+          <strong>Клинкерная плитка производства Paradyz</strong>
+          <p>В настоящий момент доступны 14 цветовых оттенков плитки Paradyz. Размеры плитки 245x65x7,4 мм.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Aquarius-Brown</th>
+                <th>Cloud-Brown</th>
+                <th>Cloud-Brown-Duro</th>
+                <th>Cloud-Rosa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("paradyz/Aquarius-Brown.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Aquarius-Brown.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Cloud-Brown.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Cloud-Brown.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Cloud-Brown-Duro.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Cloud-Brown-Duro.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Cloud-Rosa.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Cloud-Rosa.jpg' %></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Cloud-Rosa-Duro</th>
+                <th>Natural-Brown</th>
+                <th>Natural-Brown-Duro</th>
+                <th>Natural-Rosa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("paradyz/Cloud-Rosa-Duro.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Cloud-Rosa-Duro.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Natural-Brown.jpg", alt: "HOUSE 1", size: "272x272", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Natural-Brown.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Natural-Brown-Duro.jpg", alt: "HOUSE 1", size: "276x276", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Natural-Brown-Duro.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Natural-Rosa.jpg", alt: "HOUSE 1", size: "267x267", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Natural-Rosa.jpg' %></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Natural-Rosa-Duro</th>
+                <th>Semir-Beige</th>
+                <th>Semir-Brown</th>
+                <th>Semir-Grafit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("paradyz/Natural-Rosa-Duro.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Natural-Rosa-Duro.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Semir-Beige.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Semir-Beige.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Semir-Brown.jpg", alt: "HOUSE 1", size: "260x260", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Semir-Brown.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Semir-Grafit.jpg", alt: "HOUSE 1", size: "254x254", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Semir-Grafit.jpg' %></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Taurus-Brown</th>
+                <th>Taurus-Rosa</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= link_to image_tag("paradyz/Taurus-Brown.jpg", alt: "HOUSE 1", size: "250x250", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Taurus-Brown.jpg' %></td>
+                <td><%= link_to image_tag("paradyz/Taurus-Rosa.jpg", alt: "HOUSE 1", size: "258x258", title: "плитка Paradyz", class: "img-polaroid", style: "padding: 1px;"), '/assets/paradyz/Taurus-Rosa.jpg' %></td>
+                <td><%= image_tag("", size: "250x250", style: "padding: 0px;") %></td>
+                <td><%= image_tag("", size: "250x250", style: "padding: 0px;") %></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div> 
+     
+      <% else %>
+
+        
+      <% end %>
+
+    </div>
+  </div>
+</div>

@@ -11,6 +11,7 @@ Termosipmain::Application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/fotomaterial', to: 'static_pages#fotomaterial', via: 'get'
   match '/videomaterial', to: 'static_pages#videomaterial', via: 'get'
+  match '/klinker', to: 'static_pages#klinker', via: 'get'
   
   match '/content',  to: 'articles#new',        via: 'get'
 

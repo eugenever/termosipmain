@@ -14,5 +14,8 @@ class StaticPagesController < ApplicationController
 
   def videomaterial    
   end
+
+  def klinker    
+  end
   
 end
