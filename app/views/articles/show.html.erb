@@ -1,7 +1,12 @@
 <% provide(:title, @article.title) %>
-<div class="well">
-  <h1>
-    <%= raw @article.title %>
-  </h1>
-  <p><%= raw @article.content %></p>
+<div class="row">
+  <%= render 'shared/panel' %>
+  <div class="span9">
+    <div class="well">
+      <h3 style="text-align:center;">
+        <%= raw @article.title %>
+      </h3>
+      <p style="font-size: 14px;"><%= raw @article.content %></p>
+    </div>
+  </div>
 </div>

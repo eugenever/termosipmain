@@ -1,10 +1,17 @@
 <% provide(:title, 'Список статей') %>
-<h3>Список статей</h3>
-
-<%= will_paginate %>
-
-<ul class="users">
-  <%= render @articles %>
-</ul>
-
-<%= will_paginate %>
+<div class="row">
+  <%= render 'shared/panel' %>
+  <div class="span9">
+    <div>
+      <h3>Список статей</h3>
+      
+      <%= will_paginate %>
+      
+      <ul class="users">
+        <%= render @articles %>
+      </ul>
+      
+      <%= will_paginate %>    
+    </div>
+  </div>
+</div>
