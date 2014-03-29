@@ -20,5 +20,8 @@ class StaticPagesController < ApplicationController
 
   def price    
   end
+
+  def termopanel    
+  end
   
 end
