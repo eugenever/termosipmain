@@ -20,7 +20,7 @@
         <ul class="nav pull-right">
           <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Главная", root_path %></li>
           <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "О нас", about_path %></li>
-          <li><%= link_to "Прайс-лист", '#' %></li>
+          <li class="<%= 'active' if current_page?(price_path) %>"><%= link_to "Прайс-лист", price_path %></li>
           <li class="<%= 'active' if current_page?(articles_path) %>"><%= link_to "Статьи", articles_path %></li>
           
           <li id="fat-menu" class="dropdown <%= 'active' if current_page?(fotomaterial_path) || current_page?(videomaterial_path) %>">

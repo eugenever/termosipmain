@@ -3,6 +3,12 @@
   <%= render 'shared/panel' %>
   <div class="span9">
     <div class="well">
+      <p>
+        <% if current_user && current_user.admin? %>
+          <%= link_to "Редактировать", edit_article_path(@article) %>
+          | <%= link_to "Удалить", @article, method: :delete, data: { confirm: "Вы уверены что хотите удалить статью?" } %>
+        <% end %>
+      </p>
       <h3 style="text-align:center;">
         <%= raw @article.title %>
       </h3>

@@ -17,5 +17,8 @@ class StaticPagesController < ApplicationController
 
   def klinker    
   end
+
+  def price    
+  end
   
 end

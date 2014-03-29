@@ -1,0 +1,320 @@
+<% provide(:title, 'Прайс-лист') %>
+<% provide(:cena_sht40, '1000') %>
+<% provide(:cena_kvm40, '1100') %>
+<% provide(:cena_sht60, '1350') %>
+<% provide(:cena_kvm60, '1450') %>
+<div class="row">
+  <%= render 'shared/panel' %>
+  <div class="span9">
+    <div class="well">
+      
+      <div class="alert alert-block alert-error">
+        <strong><span class="label label-important">Справка</span></strong> Обновление цен от 01.05.2014
+      </div>
+
+      <div class="alert alert-block alert-info">
+        <strong><span class="label label-info">Информация</span></strong> Выезд на замеры наших специалистов в радиусе 60 км (включая Ижевск) бесплатно
+      </div>
+
+      <p> </p>
+      <p align="center"><b>Заливка пеноизола - 3000 руб/куб.м</b></p>
+      <p> </p>
+      <HR NOSHADE WIDTH="100%" SIZE="3">
+
+      <p> </p>
+      <p align="center"><b>Напыление пенополиуретана</b></p>
+      <p> </p>
+
+      <table align="center" border="1" cellpadding="5" cellspacing="1" style="font-family:times new roman;">
+        <thead>
+          <tr>
+            <th scope="col">Толщина слоя пенополиуретана, см</th>
+            <th scope="col">Цена, руб/кв.м</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:center">2</td>
+            <td style="text-align:center">300</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">3</td>
+            <td style="text-align:center">450</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">4</td>
+            <td style="text-align:center">600</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">5</td>
+            <td style="text-align:center">750</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">6</td>
+            <td style="text-align:center">900</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">7</td>
+            <td style="text-align:center">1050</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">8</td>
+            <td style="text-align:center">1200</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p> </p>
+      <p style="font-size: 14px;">Работы на высоте более 4 метров – плюс 10%.</p>
+      <p style="font-size: 14px;">Объекты с площадью более 100 кв.м при толщине напыления 5 см – скидка до 10%.</p>
+      <p> </p>
+      <HR NOSHADE WIDTH="100%" SIZE="3">
+      <p> </p>
+      <p align="center"><b>Фасадные термопанели (включая стоимость клинкерной плитки и пенополиуретана)</b></p>
+            
+      <table align="center" border="1" cellpadding="5" cellspacing="1" style="font-family:times new roman;">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="2" style="text-align:center"><strong>Наименование клинкерной плитки</strong></td>
+            <td colspan="2" rowspan="1" style="text-align:center"><strong>Толщина слоя пенополиуретана 40 мм</strong></td>
+            <td colspan="2" rowspan="1" style="text-align:center"><strong>Толщина слоя пенополиуретана 60 мм</strong></td>
+          </tr>
+          <tr>
+            <td style="text-align:center">руб/шт</td>
+            <td style="text-align:center">руб/кв.м</td>
+            <td style="text-align:center">руб/шт</td>
+            <td style="text-align:center">руб/кв.м</td>
+          </tr>
+          <tr>
+            <td colspan="5" style="text-align:center"><strong>Плитка торговой марки Cerrad (Польша)</strong></td>
+          </tr>
+          <tr>
+            <td>Аляска</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Медовая глазурованная</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Красная</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Колорадо</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Монтана</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Индиана</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Дакота</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Коричневая глазурованная</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Бургонский плюс</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Бургонский плюс рустика</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Кантри бежевая плюс рустика</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Кантри вишня плюс рустика</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Кантри вишня плюс</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Песочная рустика</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Гоби рустика</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          
+          <tr>
+            <td colspan="5" style="text-align:center"><strong>Плитка торговой марки Paradyz (Польша)</strong></td>
+          </tr>
+
+          <tr>
+            <td>Aquarius-Brown</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Cloud-Brown</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Cloud-Brown-Duro</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Cloud-Rosa</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Cloud-Rosa-Duro</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Natural-Brown</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Дакота</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Natural-Brown-Duro</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Natural-Rosa</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Natural-Rosa-Duro</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Semir-Beige</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Semir-Brown</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Semir-Grafit</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Taurus-Brown</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+          <tr>
+            <td>Taurus-Rosa</td>
+            <td style="text-align:center"><%= yield(:cena_sht40) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm40) %></td>
+            <td style="text-align:center"><%= yield(:cena_sht60) %></td>
+            <td style="text-align:center"><%= yield(:cena_kvm60) %></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p> </p>
+      <p style="font-size: 14px;">Стоимость работ по монтажу термопанелей - 600 руб/кв.м</p>
+      <p style="font-size: 14px;">Стоимость расходных материалов и вспомогательных инструментов (например, крепеж, затирка, шприцы-нагнетатели) определяется по мере выполнения работ.</p>
+
+      <div class="alert alert-block alert-success">
+        <strong><span class="label label-success">Рекомендация</span></strong> Расходные материалы и вспомогательные инструменты рекомендуем приобретать у нас в целях избежания конструктивных и технологических несоответствий в процессе монтажа
+      </div>
+      
+    </div>
+  </div>
+</div>
