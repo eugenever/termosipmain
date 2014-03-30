@@ -1,6 +1,9 @@
 Termosipmain::Application.routes.draw do
   
   mount Ckeditor::Engine => '/ckeditor'
+
+  get "sitemap.xml" => "home#sitemap", format: :xml, as: :sitemap
+  get "robots.txt" => "home#robots", format: :text, as: :robots
   
   resources :articles
   resources :users

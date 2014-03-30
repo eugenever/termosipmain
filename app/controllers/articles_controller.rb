@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
 
   before_action :signed_in_user, only: [:new, :edit, :update, :destroy]
   before_action :signed_in_user_admin, only: [:new, :edit, :update, :destroy]
+  after_commit  :update_sitemap
 
   def index
     @articles = Article.paginate(page: params[:page])
@@ -63,6 +64,11 @@ class ArticlesController < ApplicationController
       unless signed_in?
         redirect_to signin_url, notice: "Необходимо авторизоваться!"
       end   
-    end 
+    end
+
+    def update_sitemap
+      system("RAILS_ENV=#{Rails.env} bundle exec rake sitemap:generate")
+      system("RAILS_ENV=#{Rails.env} bundle exec rake sitemap:symlink")
+    end
 
 end

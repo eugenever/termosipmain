@@ -36,6 +36,14 @@ after 'deploy:update_code', :roles => :app do
   #run "ln -s #{deploy_to}/shared/config/database.yml #{current_release}/config/database.yml"
 end
 
+namespace :symlinks do
+  desc "generate and copy the symlink"
+  task :generate_sitemap do
+    run " cd #{release_path} && RAILS_ENV=production bundle exec rake sitemap:generate"
+    run " cd #{release_path} &&  RAILS_ENV=production bundle exec rake sitemap:symlink"
+  end
+end
+
 after "deploy", "deploy:cleanup"
 
 desc 'copy ckeditor nondigest assets'

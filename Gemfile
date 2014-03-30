@@ -19,6 +19,7 @@ gem 'jbuilder', '1.0.2'
 gem 'mysql2', '0.3.15'
 gem 'ckeditor'
 gem 'paperclip'
+gem 'dynamic_sitemaps'
 
 group :development, :test do
   gem 'thin'
