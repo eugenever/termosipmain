@@ -14,6 +14,8 @@ Termosipmain::Application.routes.draw do
   match '/klinker', to: 'static_pages#klinker', via: 'get'
   match '/price', to: 'static_pages#price', via: 'get'
   match '/termopanel', to: 'static_pages#termopanel', via: 'get'
+  match '/ppu', to: 'static_pages#ppu', via: 'get'
+  match '/pi', to: 'static_pages#pi', via: 'get'
 
   match '/content',  to: 'articles#new',        via: 'get'
 

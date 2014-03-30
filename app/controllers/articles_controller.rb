@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 
+  before_action :signed_in_user, only: [:new, :edit, :update, :destroy]
   before_action :signed_in_user_admin, only: [:new, :edit, :update, :destroy]
 
   def index
@@ -57,5 +58,11 @@ class ArticlesController < ApplicationController
         redirect_to signin_url, notice: "Необходимы права администратора!"
       end
     end
+
+    def signed_in_user
+      unless signed_in?
+        redirect_to signin_url, notice: "Необходимо авторизоваться!"
+      end   
+    end 
 
 end

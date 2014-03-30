@@ -23,5 +23,11 @@ class StaticPagesController < ApplicationController
 
   def termopanel    
   end
+
+  def ppu    
+  end
+
+  def pi    
+  end
   
 end
