@@ -2,7 +2,8 @@ class ArticlesController < ApplicationController
 
   before_action :signed_in_user, only: [:new, :edit, :update, :destroy]
   before_action :signed_in_user_admin, only: [:new, :edit, :update, :destroy]
-  after_commit  :update_sitemap
+  after_create  :update_sitemap
+  after_destroy  :update_sitemap
 
   def index
     @articles = Article.paginate(page: params[:page])
