@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ТермоСип - <%= yield(:title) %></title>
+    <title><%= yield(:title) %></title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="<%= yield(:meta_keywords) %>" /> 
+    <meta name="description" content="<%= yield(:meta_description) %>" />
     <%= render 'layouts/shim' %>    
   </head>
   <body style="<%= 'padding-top: 41px;' if current_page?(root_path) %>">
