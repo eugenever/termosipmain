@@ -7,3 +7,7 @@ $(function() {
         else { $(scrollDiv).fadeIn("slow") } });
       $(this).click(function() { $("html, body").animate({ scrollTop: 0 }, "slow") }) } });
 $(function() { $("#w2b-StoTop").scrollToTop(); });
+
+$(function() {
+  $('body').animate({'scrollTop':'0px'});
+});
