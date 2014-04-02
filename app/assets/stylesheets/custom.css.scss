@@ -43,19 +43,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
   text-align: center;
+  font-family: Times New Roman, serif;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  font-family: Times New Roman, serif;
 }
 
 p {
