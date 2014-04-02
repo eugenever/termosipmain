@@ -11,12 +11,8 @@
      
       <p align="center">Типовое производственное помещение</p>
 
-      <% if Rails.env.development? %>
-        <p style="text-align:center;"><%= link_to image_tag("manufacture.jpg", alt: "manufacture", size: "750x750", class: "img-polaroid"), '/assets/manufacture.jpg' %></p>
-      <% else %>
-        <p style="text-align:center;"><%= link_to image_tag("manufacture.jpg", alt: "manufacture", size: "750x750", class: "img-polaroid"), '/assets/manufacture-684914535f7fd2f7266a90c9197b05aa.jpg' %></p>
-      <% end %>
-     
+      <p style="text-align:center;"><%= link_to image_tag("manufacture.jpg", alt: "manufacture", size: "750x750", class: "img-polaroid"), '/images/manufacture.jpg' %></p>
+           
     </div>
   </div>
 </div>
