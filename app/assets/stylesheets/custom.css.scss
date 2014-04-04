@@ -11,6 +11,10 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+.dropdown-backdrop{
+  position: static;
+}
+
 /* universal */
 
 html {
