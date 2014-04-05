@@ -11,8 +11,16 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+//для работы выпадающего меню на мобильных устройствах
 .dropdown-backdrop{
   position: static;
+}
+
+#centerLayer {
+  margin-left: 8%; /* Отступ слева */
+  width: 720px; /* Ширина слоя */
+  height: 450px;
+  padding: 5px; /* Поля вокруг текста */
 }
 
 /* universal */
