@@ -26,6 +26,9 @@ Termosipmain::Application.routes.draw do
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
 
+  #обработка ошибок, неточных запросов
+  match '*path', :to => 'errors#error_not_found', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
