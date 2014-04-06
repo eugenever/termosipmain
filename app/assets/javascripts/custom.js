@@ -23,11 +23,12 @@ $(function() {
 
 //ресайз окна и изменение левого отступа для mainheader на главной странице
 $(window).resize(function() {
-  $(document).ready(function() { 
+  //$(document).ready(function() { 
     
     var window_width = $(window).width();
     var window_height = $(window).height();
     var contactLayer_width = $("#contactLayer").width();
+    var videoLayer_width = $("#videoLayer").width();
     
     if (window_width < 800) {
       $("#titleContainer").css("margin-left" , "10px");      
@@ -42,9 +43,9 @@ $(window).resize(function() {
      $("#centerLayer").css("width" , map_width + "px").css("height" , map_height + "px").css("margin-left" , margin_left + "%");      
     } else {
      $("#centerLayer").css("width" , "720px").css("height" , "450px").css("margin-left" , "7%"); 
-    }
+    }   
 
-  });
+  //});
 });
 
 
@@ -53,6 +54,7 @@ $(document).ready(function() {
   var window_width = $(window).width();
   var window_height = $(window).height();
   var contactLayer_width = $("#contactLayer").width();
+  var videoLayer_width = $("#videoLayer").width();
     
   if (window_width < 800) {
     $("#titleContainer").css("margin-left" , "10px");      
@@ -70,4 +72,5 @@ $(document).ready(function() {
   }
 
 });
+
 
