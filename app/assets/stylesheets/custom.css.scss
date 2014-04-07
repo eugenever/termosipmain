@@ -31,7 +31,7 @@ html {
 
 body {
   padding-top: 60px;
-  background-image: url(/assets/background.png);
+  background-image: asset_url("background.png");
   background-repeat: repeat;
 }
 
