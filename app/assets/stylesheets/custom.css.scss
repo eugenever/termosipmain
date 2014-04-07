@@ -343,3 +343,55 @@ aside {
 .row-separate {
     height: 15px;
 }
+
+//боковое меню
+ul.secondary-menu {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+ul.secondary-menu li {
+  background: #333333;
+  list-style: none;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 1px;
+}
+
+ul.secondary-menu li a {
+  padding: 10px;
+  display: block;
+  border-top: 1px;
+  border-right: 1px;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #ddd;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+ul.secondary-menu li a:hover,
+ul.secondary-menu li:hover > a {
+  background: #3483a5;
+  border-radius: 10px;
+}
+
+ul.secondary-menu li ul,
+ul.secondary-menu li ul.sub-menu li ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+ul.secondary-menu li:hover ul,
+ul.secondary-menu li ul.sub-menu li:hover ul {
+  left: 200px;
+  top: 0px;
+  width: 200px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+

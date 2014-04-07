@@ -1,30 +1,26 @@
 <div class="span3">
   <div id="wrapperPanel">
-    <nav>
-      <p class="nav-header">Товары и услуги</li>
-      <ul class="nav nav-tabs nav-stacked">
-        <li>
-          <a style="color: #4183C4; padding-right:2px; padding-left:2px" href="/ppu">
-            <i class="icon-chevron-right"></i>Утепление пенополиуретаном
-          </a>
-        </li>
-        <li>
-          <a style="color: #4183C4; padding-right:2px; padding-left:2px" href="/pi">
-            <i class="icon-chevron-right"></i>Утепление пеноизолом
-          </a>
-        </li>
-        <li>
-          <a style="color: #4183C4; padding-right:2px; padding-left:2px" href="/termopanel">
-            <i class="icon-chevron-right"></i>Клинкерные термопанели
-          </a>
-        </li>
-        <li>
-          <a style="color: #4183C4; padding-right:2px; padding-left:2px" href="/klinker">
-            <i class="icon-chevron-right"></i>Клинкерная плитка
-          </a>
-        </li>
+    <li class="nav-header">Товары и услуги</li>
+
+    <ul class="secondary-menu">
+      <!--<li><a href=" ">Раздел 1</a>
+      <ul class="sub-menu">
+        <li><a href=" ">Раздел 1.1</a>
+        <ul class="sub-menu">
+          <li><a href=" ">Раздел 1.1.1</a></li>
+          <li><a href=" ">Раздел 1.1.2</a></li>
+        </ul>
+      </li>
+        <li><a href=" ">Раздел 1.2</a></li>
+        <li><a href=" ">Раздел 1.3</a></li>
       </ul>
-    </nav>
+      </li>-->
+      <li><a href="/ppu" style="<%= 'background: #3483a5;' if current_page?(ppu_path) %>">Утепление пенополиуретаном</a></li>
+      <li><a href="/pi" style="<%= 'background: #3483a5;' if current_page?(pi_path) %>">Утепление пеноизолом</a></li>
+      <li><a href="/termopanel" style="<%= 'background: #3483a5;' if current_page?(termopanel_path) %>">Фасадные термопанели</a></li>
+      <li><a href="/klinker" style="<%= 'background: #3483a5;' if current_page?(klinker_path) %>">Клинкерная плитка</a></li>
+    </ul>
+
   </div>
   <% if current_page?(pi_path) %>
     <HR NOSHADE WIDTH="100%" SIZE="3">
