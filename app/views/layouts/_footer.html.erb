@@ -1,5 +1,5 @@
 <footer class="footer">
-    
+  <% if Rails.env.production? %>  
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
   (function (d, w, c) {
@@ -27,4 +27,5 @@
   </script>
   <noscript><div><img src="//mc.yandex.ru/watch/24533945" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+  <% end %>
 </footer>
