@@ -23,17 +23,21 @@ $(function() {
 
 //ресайз окна и изменение левого отступа для mainheader на главной странице
 $(window).resize(function() {
-  //$(document).ready(function() { 
-    
+      
     var window_width = $(window).width();
     var window_height = $(window).height();
     var contactLayer_width = $("#contactLayer").width();
     var videoLayer_width = $("#videoLayer").width();
     
-    if (window_width < 800) {
-      $("#titleContainer").css("margin-left" , "10px");      
+    if (window_width < 1200) {
+      if (window_width < 340) {
+        $("#titleContainer").css("margin-left" , "7px");
+      } else {
+        var margin_left_title = 130*(window_width/1200)*0.8;
+        $("#titleContainer").css("margin-left" , margin_left_title + "px"); 
+      }     
     } else {
-      $("#titleContainer").css("margin-left" , "80px");
+      $("#titleContainer").css("margin-left" , "130px");
     }
 
     if (contactLayer_width < 830) {
@@ -44,8 +48,7 @@ $(window).resize(function() {
     } else {
      $("#centerLayer").css("width" , "720px").css("height" , "450px").css("margin-left" , "7%"); 
     }   
-
-  //});
+ 
 });
 
 
@@ -56,10 +59,15 @@ $(document).ready(function() {
   var contactLayer_width = $("#contactLayer").width();
   var videoLayer_width = $("#videoLayer").width();
     
-  if (window_width < 800) {
-    $("#titleContainer").css("margin-left" , "10px");      
+  if (window_width < 1200) {
+    if (window_width < 340) {
+      $("#titleContainer").css("margin-left" , "7px")
+    } else {
+      var margin_left_title = 130*(window_width/1200)*0.8;
+      $("#titleContainer").css("margin-left" , margin_left_title + "px"); 
+    }     
   } else {
-    $("#titleContainer").css("margin-left" , "80px");
+    $("#titleContainer").css("margin-left" , "130px");
   }
 
   if (contactLayer_width < 830) {
