@@ -286,14 +286,6 @@ aside {
   }
 }
 
-.well {
-  margin-bottom: 5px;
-  background-color: #fff;
-  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  box-shadow: 0 0 6px rgba(0,0,0,0.06);
-}
-
 /* Кнопка наверх */
 
 #w2b-StoTop {
@@ -437,7 +429,9 @@ HR {
 //стилизация заголовка
 h1 {
   font: normal 1.7em Georgia, "Times New Roman", Times, serif;
-  margin: 0 0 20px;
+  margin: 0 0 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 10px 0;
   font-weight: normal;
   text-align: center;
@@ -456,6 +450,41 @@ h1 small {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: none;
   display: block; /*--Выделяем для тэга small отдельную линию--*/
+}
+
+.well {
+  margin-bottom: 5px;
+  background-color: #fff;
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  box-shadow: 0 0 6px rgba(0,0,0,0.06);
+  //overflow: hidden;
+  //-moz-overflow: hidden;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  //border-top: 1px solid #CCC;
+  //margin-bottom: 10px;
+  //width: 100%;
+  //padding: 19px;
+  border-radius: 0 0 5px 5px;
+}
+
+.page-header {
+  background-color: whiteSmoke;
+  background-image: -moz-linear-gradient(center top,white 26%,whiteSmoke 76%);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.26,white),color-stop(0.76,whiteSmoke));
+  background-image: -ms-linear-gradient(center top,white 26%,whiteSmoke 76%);
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  padding-bottom: 0;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 0px;
+  //float: left;
+  //width: 100%;
+  //padding-left: 19px;
+  //padding-right: 19px;
 }
 
 
