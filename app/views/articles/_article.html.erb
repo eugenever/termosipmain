@@ -1,7 +1,7 @@
 <li>
-  <div class="well">
+  <div class="well" style="border-top: 1px solid #CCC; border-radius: 5px 5px 5px 5px;">
   <p><%= link_to article.title, article %></p>
-  <p style="font-size: 14px;"><%= raw article.description %></p>
+  <%= raw article.description %>
   <p>
     <% if current_user && current_user.admin? %>
       <%= link_to "Редактировать", edit_article_path(article) %>

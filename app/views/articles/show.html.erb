@@ -4,17 +4,15 @@
 <div class="row">
   <%= render 'shared/panel' %>
   <div class="span9">
-    <div class="well">
+    <div class="well" style="border-top: 1px solid #CCC; border-radius: 5px 5px 5px 5px;">
       <p>
         <% if current_user && current_user.admin? %>
           <%= link_to "Редактировать", edit_article_path(@article) %>
           | <%= link_to "Удалить", @article, method: :delete, data: { confirm: "Вы уверены что хотите удалить статью?" } %>
         <% end %>
       </p>
-      <h3 style="text-align:center;">
-        <%= raw @article.title %>
-      </h3>
-      <p style="font-size: 14px;"><%= raw @article.content %></p>
+      <h1><%= raw @article.title %></h1>
+      <%= raw @article.content %>
     </div>
   </div>
 </div>
