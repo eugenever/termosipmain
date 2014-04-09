@@ -11,6 +11,12 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+//главный контейнер
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 //для работы выпадающего меню на мобильных устройствах
 .dropdown-backdrop{
   position: static;
