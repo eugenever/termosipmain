@@ -499,7 +499,100 @@ h1 small {
 }
 
 //таблицы
+.features-table
+{
+  width: auto;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-shadow: 0 1px 0 #fff;
+  color: #2a2a2a;
+  background: #fafafa;
+  background-image: -moz-linear-gradient(top, #fff, #eaeaea, #fff); /* Firefox 3.6 */
+  background-image: -webkit-gradient(linear,center bottom,center top,from(#fff),color-stop(0.5, #eaeaea),to(#fff));
+  margin-top:20px;
+  margin-bottom:20px;
+  font-family: Times, serif;
+}
+ 
+.features-table td
+{
+  height: 30px;
+  padding: 0 10px;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+ 
+.features-table tbody td
+{
+  text-align: center;
+  width: auto;
+  font-size: 110%;
+  border-right: 1px solid #cdcdcd;
+}
+ 
+ 
+.features-table td.grey
+{
+  background: #efefef;
+  background: rgba(144,144,144,0.15);
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  text-align: left;
+}
+ 
+.features-table td.green
+{
+  background: #dff0d8;
+  //background: rgba(184,243,85,0.3);
+}
+ 
+.features-table td:nowrap
+{
+  white-space: nowrap;
+}
+ 
+.features-table thead td
+{
+  font-size: 100%; 
+  font-weight: bold;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+}
 
+.features-table thead td.noradius
+{
+  font-size: 100%; 
+  font-weight: bold;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  //border-top: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  //border-left: 1px solid white;
+}
+ 
+.features-table tfoot td
+{
+  font-size: 110%; //120
+  font-weight: normal; //bold
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #cdcdcd;
+}
 
 
 
