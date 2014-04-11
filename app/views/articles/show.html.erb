@@ -4,15 +4,15 @@
 <div class="row">
   <%= render 'shared/panel' %>
   <div class="span9">
-    <div class="well" style="border-top: 1px solid #CCC; border-radius: 5px 5px 5px 5px;">
-      <p>
+    <div id="secondary" style="padding: 25px 25px 25px 25px;">
+      <aside class="widget">
         <% if current_user && current_user.admin? %>
-          <%= link_to "Редактировать", edit_article_path(@article) %>
-          | <%= link_to "Удалить", @article, method: :delete, data: { confirm: "Вы уверены что хотите удалить статью?" } %>
+          <p><%= link_to "Редактировать", edit_article_path(@article) %>
+          | <%= link_to "Удалить", @article, method: :delete, data: { confirm: "Вы уверены что хотите удалить статью?" } %></p>
         <% end %>
-      </p>
-      <h1><%= raw @article.title %></h1>
-      <%= raw @article.content %>
+        <h1><%= raw @article.title %></h1>
+        <%= raw @article.content %>
+      </aside>
     </div>
   </div>
 </div>
