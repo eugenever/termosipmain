@@ -267,7 +267,9 @@ aside {
 }
 
 #titleContainer {
-  width: 75%;
+  width: auto;
+  //margin-left: 5%;
+  //margin-right: 5%;
 }
 
 .main-header {
@@ -630,7 +632,11 @@ h1 small {
   box-shadow: 0 0 0 1px white;
 }
 
-
-
-
-
+.leftimg {
+  float: left; /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+.rightimg  {
+  float: right; /* Выравнивание по правому краю  */ 
+  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}

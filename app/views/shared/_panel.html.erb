@@ -23,20 +23,29 @@
 
   </div>
   <% if current_page?(pi_path) %>
+    
     <HR NOSHADE WIDTH="100%">
+    
+    <p style="text-align:center;"><%= image_tag("tepoloizolaytsiya.jpg", alt: "Teploizol", class: "img-rounded") %></p>
     <p style="text-align:center;font-family: Times, serif; font-size: 1.2em;"><b>экологичность</b></p>
     <p style="text-align:center;"><%= image_tag("ecology.png", alt: "ECOLOGY", class: "img-rounded") %></p>
     <p style="text-align:center;font-family: Times, serif; font-size: 1.2em;"><b>экономия</b></p>
     <p style="text-align:center;"><%= image_tag("economy.png", alt: "ECOLOGY", class: "img-rounded") %></p>
+    
     <HR NOSHADE WIDTH="100%">
+    
     <p align="center" style="font-family: Times, serif; font-size: 1.4em;">Сертификат на пеноизол</p>
     <p style="text-align:center;"><%= link_to image_tag("sertificat_pi.jpg", alt: "OIL_BOX", size: "280x280", class: "img-polaroid"), '/images/sertificat_pi.jpg', target: "_blank" %></p>
+  
   <% end %>
-  <% if current_page?(ppu_path) || current_page?(root_path) || current_page?(about_path) %>
+  <% if current_page?(ppu_path) || current_page?(root_path) || current_page?(about_path) || current_page?(termopanel_path) || current_page?(klinker_path) %>
+    
     <HR NOSHADE WIDTH="100%">
+    <p style="text-align:center;"><%= image_tag("tepoloizolaytsiya.jpg", alt: "Teploizol", class: "img-rounded") %></p>
     <p style="text-align:center;font-family: Times, serif; font-size: 1.2em;"><b>экологичность</b></p>
     <p style="text-align:center;"><%= image_tag("ecology.png", alt: "ECOLOGY", class: "img-rounded") %></p>
     <p style="text-align:center;font-family: Times, serif; font-size: 1.2em;"><b>экономия</b></p>
     <p style="text-align:center;"><%= image_tag("economy.png", alt: "ECOLOGY", class: "img-rounded") %></p>
+  
   <% end %>
 </div>

@@ -28,7 +28,7 @@ $(window).resize(function() {
     var window_height = $(window).height();
     var contactLayer_width = $("#contactLayer").width();
     var videoLayer_width = $("#videoLayer").width();
-    
+       
     if (window_width < 1200) {
       if (window_width < 340) {
         $("#titleContainer").css("margin-left" , "7px");
@@ -39,7 +39,7 @@ $(window).resize(function() {
     } else {
       $("#titleContainer").css("margin-left" , "130px");
     }
-
+    
     if (contactLayer_width < 830) {
      var map_width = 720*(contactLayer_width/830)
      var map_height = 450*(contactLayer_width/830)
@@ -58,7 +58,7 @@ $(document).ready(function() {
   var window_height = $(window).height();
   var contactLayer_width = $("#contactLayer").width();
   var videoLayer_width = $("#videoLayer").width();
-    
+  
   if (window_width < 1200) {
     if (window_width < 340) {
       $("#titleContainer").css("margin-left" , "7px")
@@ -69,7 +69,7 @@ $(document).ready(function() {
   } else {
     $("#titleContainer").css("margin-left" , "130px");
   }
-
+    
   if (contactLayer_width < 830) {
     var map_width = 720*(contactLayer_width/830)
     var map_height = 450*(contactLayer_width/830)
