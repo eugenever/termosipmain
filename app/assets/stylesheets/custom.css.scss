@@ -640,3 +640,154 @@ h1 small {
   float: right; /* Выравнивание по правому краю  */ 
   margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
 }
+
+
+
+
+//галерея объектов
+.nc-gallery {
+  margin-bottom: 2em;
+}
+.nc-gallery-row {
+  border: 1px solid #ededed;
+  padding: 4px;
+  position: relative;
+}
+.nc-gallery-row .sub2 {
+  padding: 15px 0;
+  background: #f2f2f2;
+}
+.nc-gallery-row .sub {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+.nc-gallery-row ul {
+  width: 20000em;
+  position: absolute;
+  list-style: none;
+  height: 180px;
+}
+.nc-gallery-row ul li {
+  list-style: none;
+  width: 200px;
+  float: left;
+  padding: 0 10px;
+  font-size: 85%;
+  color: #919191;
+}
+.nc-gallery-row .sub.no-title,
+.nc-gallery-row .sub.no-title ul {
+  height: 150px;
+}
+.nc-gallery-row .nc-row-img {
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.nc-gallery-prev-next a {
+  position: absolute;
+  top: 38%;
+  height: 45px;
+  width: 39px;
+}
+.nc-gallery-prev {
+  left: 10px;
+  background: url(gal_left.jpg) no-repeat;
+}
+.nc-gallery-next {
+  right: 10px;
+  background: url(gal_right.jpg) 100% 0 no-repeat;
+}
+.nc-category {
+  padding-top: 10px;
+  margin-bottom: 2em;
+}
+.nc-category h2 {
+    background: none;
+    margin-top: 0;
+}
+.nc-category ul {
+  height: 6.5em;
+  position: relative;
+  top: -0.2em;
+}
+.nc-category ul li {
+  display: block;
+  line-height: 130%;
+  margin-bottom: 0.7em;
+  background: url(li1.gif) 0 0.5em no-repeat;
+  padding-left: 12px;
+  font-style: italic;
+  max-height: 2.5em;
+  overflow: hidden;
+}
+.nc-category .nc-row-img {
+  margin-bottom: 1.5em;
+}
+
+.ulfoto, {
+  margin-left: 5px;
+  margin-right: 0px;
+  padding: 0;
+  line-height: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+.lifoto {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+.nc-row-img {
+  display: block;
+  border: 1px solid #d8d8d8;
+  background: #ffffff;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+.nc-row-img:hover {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.075);
+}
+
+
+//конец галереи объектов
+
+
+
+//второй вариант галереи карусели
+#owl-example .item{
+  //background: #3fbf79;
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.customNavigation{
+  text-align: center;
+}
+
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.item img {
+  height: auto;
+}
+//конец 2-го варианта карусели ралереи
