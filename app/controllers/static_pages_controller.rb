@@ -29,5 +29,8 @@ class StaticPagesController < ApplicationController
 
   def pi    
   end
+
+  def sipanel    
+  end
   
 end

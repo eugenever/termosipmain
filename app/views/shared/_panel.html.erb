@@ -19,6 +19,7 @@
       <li><a href="/pi" style="<%= 'background: #3483a5;' if current_page?(pi_path) %>">Утепление пеноизолом</a></li>
       <li><a href="/termopanel" style="<%= 'background: #3483a5;' if current_page?(termopanel_path) %>">Фасадные термопанели</a></li>
       <li><a href="/klinker" style="<%= 'background: #3483a5;' if current_page?(klinker_path) %>">Клинкерная плитка</a></li>
+      <li><a href="/sipanel" style="<%= 'background: #3483a5;' if current_page?(klinker_path) %>">СИП панели</a></li>
     </ul>
 
   </div>
@@ -47,5 +48,13 @@
     <p style="text-align:center;font-family: Times, serif; font-size: 1.2em;"><b>экономия</b></p>
     <p style="text-align:center;"><%= image_tag("economy.png", alt: "ECOLOGY", class: "img-rounded") %></p>
   
+  <% end %>
+
+  <% if current_page?(price_path) %>
+    <div class="well" id="widget_text">
+      <li class="nav-header">Контакты</li>
+      <p style="font-size: 14px; padding-left: 14px;">8-950-162-17-47 ☎</p>
+      <p style="font-size: 14px; padding-left: 14px;">Дедюхин Сергей Сергеевич</p>
+    </div>
   <% end %>
 </div>

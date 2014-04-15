@@ -1,0 +1,102 @@
+<% provide(:title, 'СИП-панели: описание и фото') %>
+<% provide(:meta_keywords, '') %>
+<% provide(:meta_description, 'Если вам необходимо в короткие сроки построить качественный дом/коттедж, то технология сип панелей для вас') %>
+
+
+<div class="row">
+  <%= render 'shared/panel' %>
+  <div class="span9">
+    
+    <div class="page-header">
+      <h1>СИП панели "ТермоСип"</h1>
+    </div>
+
+    <div class="well">
+     
+      <p align="justify" style="font-size: 14px; text-indent: 2em;">Современный мир не стоит на месте, снова и снова развиваются строительные спец технологии, появляются новые материалы и методы строительства. Сравнительно недавно в Европе были разработаны структурно-изолированные панели (СИП), их применение в строительстве домов и надворных построек любой сложности.<%= image_tag("sipanel 3.jpg", alt: "FASAD_PANEL", size: "40X40", class: "img-rounded rightimg") %> В коттеджных поселках, находящихся в разных климатических зонах, увеличило скорость процесса в разы и позволило намного удешевить строительство. При этом технология остается одной из самых экологичных.</p>
+      <p align="justify" style="font-size: 14px; text-indent: 2em;">Если вам необходимо в короткие сроки построить качественный дом/коттедж, то технология сип панелей для вас. Во-первых, это скорость строительства, а точнее сборки, своего рода «взрослы конструктор лего». Во-вторых, такие строения самые теплые, их можно возводить даже на Северном полюсе, сип панели имеют теплопроводность, которая может выдержать самые низкие температуры.</p>
+      <p align="justify" style="font-size: 14px; text-indent: 2em;">Комплект коттеджа ставится на строительную площадку, и ошибиться в его сборке практически невозможно, с этим заданием может совладать один эксперт, умеющий читать строительные чертежи и пара подсобников. После сборки необходимо произвести отделку фасада с использованием штукатурки по сетке, после можно покрасить, побелить и разнообразить декоративными элементами.</p>
+      
+      <HR NOSHADE WIDTH="100%" SIZE="3">
+
+      <!--
+      <div class='nc-title'><h2><span>Фотографии СИП панелей "ТермоСип"</span></h2></div>
+
+      <div class="alert alert-block alert-info">
+        <strong><span class="label label-info">Информация</span></strong> Для просмотра изображения в увеличенном варианте кликните на него.
+      </div>
+
+      <table align="center" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td style="padding: 0 10px;"><%= link_to image_tag("termopaneli/tp1.jpg", alt: "TP 1", width: "100%", title: "Термопанели ТермоСип",class: "img-polaroid", style: "padding: 1px;"), '/images/termopaneli/tp1.jpg', target: "_blank" %></td>
+            <td style="padding: 0 10px;"><%= link_to image_tag("termopaneli/tp2.jpg", alt: "TP 2", width: "100%", title: "Термопанели ТермоСип",class: "img-polaroid", style: "padding: 1px;"), '/images/termopaneli/tp2.jpg', target: "_blank" %></td>
+            <td style="padding: 0 10px;"><%= link_to image_tag("termopaneli/tp3.jpg", alt: "TP 3", width: "100%", title: "Термопанели ТермоСип",class: "img-polaroid", style: "padding: 1px;"), '/images/termopaneli/tp3.jpg', target: "_blank" %></td>      
+          </tr>
+        </tbody>
+      </table>
+
+      <HR NOSHADE WIDTH="100%" SIZE="3">
+      -->
+
+      <div class='nc-title'><h2><span>Технические характеристики СИП панелей</span></h2></div>
+      
+      <table class="features-table">
+        <thead>
+            <tr>
+                <td class="grey" style="text-align: center;">Типоразмер <br> (длина * ширина * толщина, мм)</td>
+                <td class="green">Размер паза, мм</td>
+                <td class="green">Толщина утеплителя, мм</td>
+                <td class="green">Толщина обкладки, мм</td>
+                <td class="green">Площадь, кв.м</td>
+            </tr>
+        </thead>
+          
+        <tbody>
+            <tr>
+                <td class="grey" style="text-align: center;">2500*1250*174</td>
+                <td class="green">50</td>
+                <td class="green">150</td>
+                <td class="green">12</td>
+                <td class="green">3,125</td>
+            </tr>                     
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td class="grey" style="text-align: center;">2800*1250*174</td>
+            <td class="green">50</td>
+            <td class="green">150</td>
+            <td class="green">12</td>
+            <td class="green">3,5</td>           
+          </tr>
+        </tfoot>
+
+      </table>
+
+
+
+      <div class='nc-title'><h2><span>Конструктивная схема СИП панели</span></h2></div>
+
+      <p style="text-align:center;"><%= link_to image_tag("sipanel schema.jpg", alt: "sipanel schema", size: "600x600", class: ""), '/images/sipanel schema.jpg', target: "_blank" %></p>
+      <p style="text-align:center;"><%= link_to image_tag("sipanel schema 2.jpg", alt: "sipanel schema", size: "600x600", class: ""), '/images/sipanel schema 2.jpg', target: "_blank" %></p>
+     
+      <br> 
+      <p style="font-size: 14px; text-indent: 2em;">Комплектность производимых СИП панелей:</p>
+      <ul style="padding: 0; margin-left: 7%;">
+        <li style="margin: 3px;">OSB-3 производста Egger в количестве двух листов;</li>
+        <li style="margin: 3px;">утеплитель - пенополистирол ПСБ-С 25;</li>
+        <li style="margin: 3px;">клеевое соединение - полиуретановый клей "Клейберит".</li>
+      </ul>
+      <!--<HR NOSHADE WIDTH="100%" SIZE="3">-->
+      
+    </div>
+  </div>
+</div>
