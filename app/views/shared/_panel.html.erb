@@ -1,7 +1,7 @@
 <div class="span3">
   <div id="wrapperPanel">
+    <%#= image_tag("icon_header1.png") %>
     <li class="nav-header">Товары и услуги</li>
-
     <ul class="secondary-menu">
       <!--<li><a href=" ">Раздел 1</a>
       <ul class="sub-menu">
@@ -39,7 +39,7 @@
     <p style="text-align:center;"><%= link_to image_tag("sertificat_pi.jpg", alt: "OIL_BOX", size: "280x280", class: "img-polaroid"), '/images/sertificat_pi.jpg', target: "_blank" %></p>
   
   <% end %>
-  <% if current_page?(ppu_path) || current_page?(root_path) || current_page?(about_path) || current_page?(termopanel_path) || current_page?(klinker_path) %>
+  <% if current_page?(ppu_path) || current_page?(root_path) || current_page?(about_path) || current_page?(termopanel_path) || current_page?(klinker_path) || current_page?(sipanel_path) %>
     
     <HR NOSHADE WIDTH="100%">
     <p style="text-align:center;"><%= image_tag("tepoloizolaytsiya.jpg", alt: "Teploizol", class: "img-rounded") %></p>
@@ -56,5 +56,11 @@
       <p style="font-size: 14px; padding-left: 14px;">8-950-162-17-47 ☎</p>
       <p style="font-size: 14px; padding-left: 14px;">Дедюхин Сергей Сергеевич</p>
     </div>
+    <%= image_tag("stroitel money.png", class: "centerimg") %>
   <% end %>
+  
+  <% if current_page?(fotomaterial_path) %>
+    <%= image_tag("stroitel foto.png", class: "centerimg") %>
+  <% end %>
+
 </div>

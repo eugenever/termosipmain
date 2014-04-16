@@ -641,6 +641,17 @@ h1 small {
   margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
 }
 
+.rightimgheader  {
+  float: right; /* Выравнивание по правому краю  */ 
+  margin: 0px 10% 0px 1%; /* Отступы вокруг картинки */
+}
+
+.centerimg {
+  display:block;
+  margin:0 auto;
+  margin-top: 15px;
+}
+
 
 
 
