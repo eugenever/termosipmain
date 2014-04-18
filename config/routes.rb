@@ -20,12 +20,16 @@ Termosipmain::Application.routes.draw do
   match '/ppu', to: 'static_pages#ppu', via: 'get'
   match '/pi', to: 'static_pages#pi', via: 'get'
   match '/sipanel', to: 'static_pages#sipanel', via: 'get'
+  match '/object', to: 'static_pages#object', via: 'get'
 
   match '/content',  to: 'articles#new',        via: 'get'
 
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
+
+  #тест роутинга с переадресацией
+  #match "/company/1" => redirect("/ppu"), via: 'get'
 
   #обработка ошибок, неточных запросов
   match '*path', :to => 'errors#error_not_found', via: 'get'

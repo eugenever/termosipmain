@@ -32,5 +32,8 @@ class StaticPagesController < ApplicationController
 
   def sipanel    
   end
+
+  def object
+  end
   
 end

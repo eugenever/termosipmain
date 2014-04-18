@@ -79,6 +79,15 @@ h2 {
   font-family: Times New Roman, serif;
 }
 
+h3 {
+  font-size: 1.3em;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: normal;
+  font-family: Times New Roman, serif;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -775,8 +784,9 @@ h1 small {
 //второй вариант галереи карусели
 #owl-example .item{
   //background: #3fbf79;
-  padding: 30px 0px;
-  margin: 10px;
+  padding: 0px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #FFF;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

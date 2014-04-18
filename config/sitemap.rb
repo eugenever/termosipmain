@@ -13,7 +13,7 @@ sitemap :site do
   end
 
   static_url = [about_path, contact_path, fotomaterial_path, klinker_path, pi_path, ppu_path, price_path,
-                termopanel_path, videomaterial_path, sipanel_path]
+                termopanel_path, videomaterial_path, sipanel_path, object_path]
  
   static_url.each do |static|
     url "http://termosip.ru" + static,:last_mod => DateTime.now,:change_freq => 'weekly', :priority => 0.9
