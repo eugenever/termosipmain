@@ -37,8 +37,12 @@ html {
 
 body {
   padding-top: 60px;
-  background-image: asset_url("light-4857.png");
+  background-image: asset_url("bstena.jpg");//asset_url("light-4857.png");
   background-repeat: repeat;
+}
+
+.well {
+
 }
 
 section {
@@ -283,8 +287,8 @@ aside {
 
 .main-header {
   padding: 10px 0 10px;
-  background-color: #3483a5;
-  background-image: linear-gradient(to bottom,#328bb1,#4baad3);
+  background-color: rgba(0, 0, 0, 0.8);//#3483a5; //rgba(0, 0, 0, 0.8);
+  //background-image: linear-gradient(to bottom,#328bb1,#4baad3);
   text-align: left;
   margin-bottom: 30px;
   margin-top: 0px;
@@ -293,16 +297,16 @@ aside {
 }
 
 .main-header .title {
-  color: #fff;
+  color: #D3D3D3;//#999999;//#fff;
   font-size: 35px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+  //text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
 }
 
 .main-header .desc {
-  color: #eee;
+  color: #D3D3D3;//#999999;//#eee;
   margin: 20px 0 0;
   font-size: 20px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+  //text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
   li {
     margin-bottom: 10px;
   }
