@@ -371,11 +371,11 @@ ul.secondary-menu {
 }
 
 ul.secondary-menu li {
-  background: #333333;
+  background: #333333;//rgba(0, 0, 0, 0.8);//#4e5c6e;//#333333;
   list-style: none;
   position: relative;
   border-radius: 10px;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 ul.secondary-menu li a {
@@ -383,12 +383,13 @@ ul.secondary-menu li a {
   display: block;
   border-top: 1px;
   border-right: 1px;
-  font-size: 16px;
-  font-family: Times, serif;
+  font-size: 12px;
+  font-family: "Trebuchet MS", "Helvetica CY", sans-serif;//Times, serif;
   font-weight: normal;
   color:  #ddd;
   text-decoration: none;
   border-radius: 10px;
+  text-transform: uppercase;
 }
 
 ul.secondary-menu li a:hover,
@@ -833,4 +834,37 @@ h1 small {
   padding-bottom: 5px;
   text-shadow: -1px 1px 1px #EEEEEE;
   text-transform: uppercase;
+}
+
+.itemlist li {
+  background: asset_url("item_list1.png") no-repeat 0px 50%;
+  padding: 2px 0 0 25px !important;
+  list-style-type: none;
+}
+
+.pr1 {
+  background: asset_url("pic1.png") no-repeat left;
+  padding-left: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  font-family: Trebuchet MS, Helvetica CY, sans-serif;
+}
+
+.pr2 {
+  background: asset_url("pic2_.png") no-repeat left;
+  padding-left: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  font-family: Trebuchet MS, Helvetica CY, sans-serif;
+}
+
+.pr3 {
+  background: asset_url("pic3.png") no-repeat left;
+  padding-left: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  width: 200px;
+  font-family: Trebuchet MS, Helvetica CY, sans-serif;
 }
