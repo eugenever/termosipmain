@@ -1017,3 +1017,52 @@ h1 small {
 #contactPanel {
   margin-top: 20px;
 }
+
+.information {
+  background: #d5e9f6 asset_url("tab_info.gif") no-repeat left top;
+  border: none;
+  padding: 1em 1em 0.25em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
+
+div.code_container {
+  background: #eee asset_url("tab_grey.gif") no-repeat left top;
+  padding: 0.25em 1em 0.5em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
+
+.note1 {
+  background: #fff9d8 asset_url("tab_note.gif") no-repeat left top;
+  border: none;
+  padding: 1em 1em 0.25em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
+
+.warning1 {
+  background: #f9d9d8 asset_url("tab_red.gif") no-repeat left top;
+  padding: 1em 1em 0.25em 48px;
+  margin: 0.25em 0 1.5em 0;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+  .alert {
+    margin-bottom: 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}
+
+.new_star {
+  background: #f3f3f3 asset_url("bg11.jpg") no-repeat 0px 0px;
+  height: 50px;
+  width: 100%;
+  margin: 0 0 15px 0;
+}
