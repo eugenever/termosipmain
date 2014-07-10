@@ -5,8 +5,8 @@
 if ENV['RAILS_ENV'] == 'production' 
   require 'unicorn/worker_killer'
 
-  max_request_min =  300
-  max_request_max =  350
+  max_request_min =  1000
+  max_request_max =  1200
 
   # Max requests per worker
   use Unicorn::WorkerKiller::MaxRequests, max_request_min, max_request_max
